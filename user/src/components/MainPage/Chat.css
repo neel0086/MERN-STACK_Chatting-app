@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:"Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+.nothing {
+    display: flex;
+    flex: 0.70;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.nothing img{
+    width:50%;
+    height: 50%;
+    
+}
+.nothing p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.chat{
+    display: flex;
+    
+    flex-direction: column;
+    flex: 0.70;
+}
+.chat_header{
+    display: flex;
+    background: var(--black);
+    padding: 20px;
+    align-items: center;
+}
+.info{
+    flex:1;
+    padding-left: 20px;
+}
+.info > h3{
+    color: var(--white);
+}
+.info > p{
+    filter: invert(0.4);
+    color: var(--lasttext)
+}
+.chatBody{
+    flex:1;
+    padding: 30px;
+    overflow-y: scroll;
+    background: var(--darkblack);
+}
+.mssg{
+    position: relative;
+    font-size: 16px;
+    padding: 1px;
+    width: fit-content;
+    min-width: 150px;
+    max-width: 300px;
+    border-radius: 10px;
+    background-color: var(--black);
+    margin-bottom: 30px;
+    word-break: break-word;
+}
+.mssg p{
+    margin:8px 10px 2px 15px;
+    font-size: 18px;
+    color: var(--white);
+    font-family:  UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif
+    
+}
+.mssg .name_tag{
+    font-size:9px;
+    font-weight: 8000;
+    font-family:"Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    margin:5px 0 0 10px;
+    color: #8774e1;
+}
+.mssg .time_tag{
+    margin:0 10px 5px 0;
+    font-size: xx-small;
+    font-family: "Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    color:rgba(255,255,255,.6)
+}
+.mssg_sender{
+    margin-left:auto;
+    background: rgb(0,70,108);
+background: linear-gradient(90deg, rgba(0,70,108,1) 100%, rgba(0,212,255,1) 100%, rgba(45,0,125,1) 100%);
+}
+
+.footer{
+    display: flex;
+    height: 7vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.footer .form {
+    display: flex;
+    flex: 1;
+}
+.footer .form > input{
+    display: flex;
+    flex: 1;
+    padding: 9px 15px;
+    font-size: 19px;
+    font-family: '"Roboto", "Helvetica", "Arial", sans-serif';
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+.footer > .MuiSvgIcon-root{
+    margin: 10px;
+    filter: invert(0.5);
+}
+.emojibar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 4px;
+    border-bottom:2px solid grey;
+    cursor: pointer;
+}
+.emoji-section{
+    display: flex;
+    margin:10px 25px;
+
+    
+    
+    
+  }
+  .emoji-section .emoji{
+    font-size: 32px;
+    cursor: pointer;
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+  .imagesend{
+      /* display: flex; */
+      width: 250px;
+      height: 270px;
+      border-radius: inherit;
+  }
+  .imageandtext{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+  }
+  .imageandtext span{
+    padding: 0.4rem 0.2rem 0.4rem 0.5rem;
+    font-size: 17px;
+    color: var(--white);
+}
+.downloadImg{
+    position: absolute;
+    right: 0;
+    color: black;
+}

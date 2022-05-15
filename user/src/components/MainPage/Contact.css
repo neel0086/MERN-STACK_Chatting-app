@@ -1,0 +1,20 @@
+
+
+.people{
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+}
+.people:hover{
+    background-color: var(--sidebarhover);
+}
+.people h3{
+    color: var(--white);
+}
+.people p{
+    color:var(--lasttext)
+}
+.people_info{
+    margin-left: 1rem;
+    vertical-align: middle;
+}
